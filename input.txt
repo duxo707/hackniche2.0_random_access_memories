@@ -1,0 +1,29 @@
+
+schema={
+    "users": [
+        Column("username", String(50), nullable=False),
+        Column("email", String(100), nullable=False),
+        Column("password_hash", String(255), nullable=False),
+        Column("created_at", TIMESTAMP, server_default="CURRENT_TIMESTAMP"),
+    ],
+    "posts": [
+        Column("title", String(255), nullable=False),
+        Column("content", Text),
+        Column("user_id", Integer, ForeignKey("users.id")),
+        Column("created_at", TIMESTAMP, server_default="CURRENT_TIMESTAMP"),
+    ],
+    "comments": [
+        Column("post_id", Integer, ForeignKey("posts.id")),
+        Column("user_id", Integer, ForeignKey("users.id")),
+        Column("content", Text),
+        Column("created_at", TIMESTAMP, server_default="CURRENT_TIMESTAMP"),
+    ],
+    "tags": [
+        Column("tag_name", String(50), nullable=False),
+    ],
+    "post_tags": [
+        Column("post_id", Integer, ForeignKey("posts.id")),
+        Column("tag_id", Integer, ForeignKey("tags.id")),
+    ],
+
+}

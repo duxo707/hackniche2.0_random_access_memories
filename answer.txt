@@ -1,0 +1,1 @@
+assistant: The top 20 posts with post IDs between 12 and 20 are displayed in descending order. The results include titles, content, post IDs, and timestamps for each post.
