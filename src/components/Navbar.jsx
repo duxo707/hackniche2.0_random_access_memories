@@ -15,7 +15,7 @@ const Navbar = () => {
             h-[15vh]
         ">
             <div className="flex flex-row">
-                <h1 className="font-bold text-xl">Codegen</h1>
+                <h1 className="font-bold text-xl">CodeGenie</h1>
             </div>
             <button className="align-self-right text-xl">
                 <FaBars />

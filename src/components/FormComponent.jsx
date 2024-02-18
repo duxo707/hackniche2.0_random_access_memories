@@ -25,26 +25,26 @@ const FormComponent = () => {
                     <div className="grid grid-cols-3 gap-0 rounded-2xl bg-[#161646] py-2 shadow-lg">
                         <div className={`${isActive ? 'h-[60px]' : 'h-[80px]'} w-full bg-[#161646] rounded-l-3xl border-r-2 border-[#9290C3] border-opacity-50`}>
                             <input
-                                placeholder="text"
+                                placeholder="Text Prompt"
                                 className="bg-[#161646] w-full h-full rounded-l-3xl outline-none text-[#9290C3] p-5 overflow-y-auto text-opacity-70 max-w-300"
                             />
                         </div>
                         <div className={`${isActive ? 'h-[60px]' : 'h-[80px]'} w-full bg-[#161646]`}>
                             <input
-                                placeholder="constraints"
+                                placeholder="Constraints"
                                 className="bg-[#161646] w-full h-full outline-none text-[#9290C3] p-5 overflow-y-autotext-opacity-70"
                             />
                         </div>
                         <div className={`${isActive ? 'h-[60px]' : 'h-[80px]'} w-full bg-[#161646] rounded-r-3xl border-l-2 border-[#9290C3] border-opacity-50`}>
                             <input
-                                placeholder="schema"
+                                placeholder="Schema"
                                 className="bg-[#161646] w-full h-full rounded-r-3xl outline-none text-[#9290C3] p-5 overflow-y-autotext-opacity-70"
                             />
                         </div>
                     </div>
                     <button
                         type="button"
-                        className={`bg-[#9290C3] rounded-lg px-5 py-2 text-[#161646] font-bold mx-auto hover:bg-[#6d6b91] flex flex-row transition ${isActive ? 'transition-opacity duration-200 opacity-0' : 'transition-opacity duration-200 opacity-100'}`}
+                        className={`bg-[#9290C3] rounded-lg px-5 py-3 text-[#161646] font-bold mx-auto hover:bg-gradient-to-r from-[#c0beef] to-green-500 flex flex-row transition ${isActive ? 'transition-opacity duration-200 opacity-0' : 'transition-opacity duration-200 opacity-100'}`}
                         onClick={handleClick}
                     >
                         Generate <HiSparkles className="my-auto ml-1 mt-1.25" />
