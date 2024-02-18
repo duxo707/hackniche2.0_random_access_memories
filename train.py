@@ -50,7 +50,7 @@ from llama_index.core.query_pipeline import (
 )
 import sqlite3
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "open ai key"
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
 Base = declarative_base()

@@ -48,16 +48,16 @@ from llama_index.core.query_pipeline import (
 import sqlite3
 
 
-vertexai.init(project="global-sign-414606", location="us-central1")
+vertexai.init(project="", location="")
 model = GenerativeModel("gemini-pro")
 
 def generate_from_gemini(text):
     responses = model.generate_content(
         text,
         generation_config={
-            "max_output_tokens": 2048,
-            "temperature": 0.9,
-            "top_p": 1
+            "max_output_tokens": ,
+            "temperature": ,
+            "top_p": 
         },
         safety_settings={
             generative_models.HarmCategory.HARM_CATEGORY_HATE_SPEECH: generative_models.HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
@@ -73,7 +73,7 @@ def generate_from_gemini(text):
     return output_text
 
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "open ai key"
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
 
